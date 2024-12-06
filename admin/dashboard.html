@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ZPHS Vodarevu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav class="admin-nav">
+        <div class="nav-brand">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <button id="logoutBtn">Logout</button>
+    </nav>
+
+    <main class="admin-main">
+        <div class="admin-sidebar">
+            <button class="tab-btn active" data-tab="gallery">Gallery Management</button>
+            <button class="tab-btn" data-tab="admissions">Admissions</button>
+            <button class="tab-btn" data-tab="messages">Messages</button>
+        </div>
+
+        <div class="admin-content">
+            <!-- Gallery Management -->
+            <div id="gallery" class="tab-content active">
+                <h2>Gallery Management</h2>
+                <form id="uploadForm" class="form">
+                    <div class="form-group">
+                        <label for="imageFile">Upload Image</label>
+                        <input type="file" id="imageFile" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageCaption">Caption</label>
+                        <input type="text" id="imageCaption" required>
+                    </div>
+                    <button type="submit">Upload Image</button>
+                </form>
+
+                <div id="galleryList" class="gallery-list">
+                    <!-- Gallery items will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Admissions Management -->
+            <div id="admissions" class="tab-content">
+                <h2>Admission Applications</h2>
+                <div id="admissionsList">
+                    <!-- Admission applications will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Messages Management -->
+            <div id="messages" class="tab-content">
+                <h2>Contact Messages</h2>
+                <div id="messagesList">
+                    <!-- Contact messages will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/admin.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

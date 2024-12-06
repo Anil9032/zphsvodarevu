@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZPHS Vodarevu - Government School</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="education_17490048.gif" alt="School Logo" class="logo">
+            <div>
+                <h1>ZPHS Vodarevu</h1>
+                <p>Government School - All Free</p>
+            </div>
+        </div>
+        <div class="nav-links">
+    
+            <a href="#home" class="active">Home</a>
+             <a href="#gallery">Gallery</a>
+            <a href="#admission">Admission</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <img src="background1.jpg" alt="School Building">
+                <img src="vodarevu beach.jpg" alt="School Building">
+                <img src="background.png" alt="School Building">
+                <div class="hero-content">
+                    <h1>Welcome to ZPHS Vodarevu</h1>
+                    <p>Empowering Minds, Shaping Futures</p>
+                </div>
+            </div>
+
+            <div class="features">
+                
+                <div class="feature-card">
+                    <i class="icon">📚</i>
+                    <h3>Quality Education</h3>
+                    <p>Comprehensive curriculum focused on academic excellence</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon">👨‍🏫</i>
+                    <h3>Experienced Faculty</h3>
+                    <p>Dedicated teachers committed to student success</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon">🤝</i>
+                    <h3>Student Support</h3>
+                    <p>Personalized attention and guidance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="icon">👮‍♂️</i>
+                    <h3>NCC</h3>
+                    <p>Unity and Discipline</p>
+                </div>
+            </div>
+
+            <div class="about">
+                <h2>About Our School</h2>
+                <p>ZPHS Vodarevu is committed to providing quality education to all students. Our school focuses on academic excellence while nurturing creativity, critical thinking, and character development.</p>
+            </div>
+        </section>
+
+        <!-- Admission Section -->
+        <section id="admission" class="section">
+            <h2>Admission Form</h2>
+            <form id="admissionForm" class="form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="previousClass">Previous Class</label>
+                    <input type="text" id="previousClass" required>
+                </div>
+                <div class="form-group">
+                    <label for="presentClass">Present Class</label>
+                    <input type="text" id="presentClass" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="documents">
+                    <h3>Required Documents</h3>
+                    <ul>
+                        <li>Transfer Certificate (TC)</li>
+                        <li>Birth Certificate</li>
+                        <li><a href="1.pdf" download="anil" id="download">Download Application Form</a></li>
+                    </ul>
+                </div>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <h2>School Gallery</h2>
+            <div id="galleryGrid" class="gallery-grid"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="icon">📍</i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>ZPHS Vodarevu, Main Road, Vodarevu Village</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="icon">📞</i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 XXXXX XXXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="icon">📧</i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@zphsvodarevu.edu.in</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login" class="section">
+            <div class="login-container">
+                <h2>Admin Login</h2>
+                <form id="loginForm" class="form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ZPHS Vodarevu. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
